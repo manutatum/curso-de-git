@@ -1,9 +1,8 @@
 <?php
 //Author: Manuel
-//El nombre por defecto es Mundo
+require("HolaMundo.php");
+
 print "Introduce tu nombre: ";
 $nombre = trim(fgets(STDIN));
-print "Hola {$nombre}\n";
+print new HolaMundo($nombre);
 ?>
-
-
